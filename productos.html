@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos | Ferretería Max</title>
+    <link rel="stylesheet" href="ESTILOS.CSS">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a class="logo" href="INDEX.HTML">
+                🔨
+                <div>
+                    <span>FERRETERIA</span>
+                    <strong>MAX</strong>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="INDEX.HTML">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="cuenta.html">Mi cuenta</a>
+            </nav>
+            <div class="header-acciones">
+                <a href="carrito.html" class="btn-carrito">
+                    🛒 Carrito
+                    <span id="contadorCarrito">0</span>
+                </a>
+                <a href="cuenta.html" class="btn-login">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="wrap">
+            <p class="migas"><a href="INDEX.HTML">Inicio</a> / Productos</p>
+            <h1>Productos</h1>
+            <p>Catálogo de Ferretería Max, organizado por categoría.</p>
+        </div>
+    </div>
+
+    <main>
+        <section id="productos" class="productos">
+            <div class="wrap">
+                <nav class="catalogo-filtros">
+                    <a href="#herramientas">Herramientas</a>
+                    <a href="#tornilleria">Tornillería</a>
+                    <a href="#pinturas">Pinturas</a>
+                    <a href="#electricidad">Electricidad</a>
+                    <a href="#medicion">Medición</a>
+                </nav>
+
+                <div id="herramientas" class="catalogo-grupo">
+                    <h2>🔨 Herramientas</h2>
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/martillo.png" alt="Martillo profesional">
+                            </div>
+                            <div class="product-info">
+                                <span>HERRAMIENTAS</span>
+                                <h3>Martillo profesional</h3>
+                                <p>Martillo con mango resistente y diseño ergonómico para trabajos del hogar.</p>
+                                <div class="product-bottom">
+                                    <strong>$58.000 COP</strong>
+                                    <button onclick="agregarProducto('Martillo profesional')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/destornilladores.png" alt="Juego de destornilladores">
+                            </div>
+                            <div class="product-info">
+                                <span>HERRAMIENTAS</span>
+                                <h3>Juego de destornilladores</h3>
+                                <p>Juego completo para diferentes tipos de trabajos y reparaciones.</p>
+                                <div class="product-bottom">
+                                    <strong>$73.000 COP</strong>
+                                    <button onclick="agregarProducto('Juego de destornilladores')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/llave.png" alt="Llave inglesa">
+                            </div>
+                            <div class="product-info">
+                                <span>HERRAMIENTAS</span>
+                                <h3>Llave inglesa</h3>
+                                <p>Llave ajustable para trabajos de reparación y mantenimiento.</p>
+                                <div class="product-bottom">
+                                    <strong>$45.000 COP</strong>
+                                    <button onclick="agregarProducto('Llave inglesa')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/alicate.png" alt="Alicate profesional">
+                            </div>
+                            <div class="product-info">
+                                <span>HERRAMIENTAS</span>
+                                <h3>Alicate profesional</h3>
+                                <p>Alicate de alta resistencia para trabajos eléctricos y mecánicos.</p>
+                                <div class="product-bottom">
+                                    <strong>$32.000 COP</strong>
+                                    <button onclick="agregarProducto('Alicate profesional')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/sierra.png" alt="Sierra manual">
+                            </div>
+                            <div class="product-info">
+                                <span>HERRAMIENTAS</span>
+                                <h3>Sierra manual</h3>
+                                <p>Sierra resistente para trabajos de corte en madera.</p>
+                                <div class="product-bottom">
+                                    <strong>$47.000 COP</strong>
+                                    <button onclick="agregarProducto('Sierra manual')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="tornilleria" class="catalogo-grupo">
+                    <h2>🔩 Tornillería</h2>
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/tornillos.png" alt="Caja de tornillos">
+                            </div>
+                            <div class="product-info">
+                                <span>TORNILLERÍA</span>
+                                <h3>Caja de tornillos</h3>
+                                <p>Tornillos de diferentes tamaños para trabajos de construcción.</p>
+                                <div class="product-bottom">
+                                    <strong>$25.000 COP</strong>
+                                    <button onclick="agregarProducto('Caja de tornillos')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="pinturas" class="catalogo-grupo">
+                    <h2>🎨 Pinturas</h2>
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/pintura.png" alt="Pintura para interiores">
+                            </div>
+                            <div class="product-info">
+                                <span>PINTURAS</span>
+                                <h3>Pintura para interiores</h3>
+                                <p>Pintura de excelente cobertura para renovar tus espacios.</p>
+                                <div class="product-bottom">
+                                    <strong>$85.000 COP</strong>
+                                    <button onclick="agregarProducto('Pintura para interiores')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="electricidad" class="catalogo-grupo">
+                    <h2>⚡ Electricidad</h2>
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/bombillo.png" alt="Bombillo LED">
+                            </div>
+                            <div class="product-info">
+                                <span>ELECTRICIDAD</span>
+                                <h3>Bombillo LED</h3>
+                                <p>Bombillo LED de bajo consumo para iluminación del hogar.</p>
+                                <div class="product-bottom">
+                                    <strong>$18.000 COP</strong>
+                                    <button onclick="agregarProducto('Bombillo LED')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="medicion" class="catalogo-grupo">
+                    <h2>📏 Medición</h2>
+                    <div class="product-grid">
+                        <article class="product-card">
+                            <div class="product-image">
+                                <img src="imagenes/cinta.png" alt="Cinta métrica">
+                            </div>
+                            <div class="product-info">
+                                <span>MEDICIÓN</span>
+                                <h3>Cinta métrica 5 metros</h3>
+                                <p>Cinta métrica resistente para mediciones precisas en tus proyectos.</p>
+                                <div class="product-bottom">
+                                    <strong>$28.000 COP</strong>
+                                    <button onclick="agregarProducto('Cinta métrica')">Comprar</button>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">
+                    🔨
+                    <span>FERRETERÍA <strong>MAX</strong></span>
+                </div>
+                <p>Todo lo que necesitas para construir, reparar y mejorar tus proyectos.</p>
+            </div>
+            <div>
+                <h3>Navegación</h3>
+                <a href="INDEX.HTML">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+            <div>
+                <h3>Atención</h3>
+                <a href="contacto.html">Contacto</a>
+                <a href="cuenta.html">Mi cuenta</a>
+                <a href="carrito.html">Carrito</a>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ferretería Max. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Ferretería Max</title>
+    <link rel="stylesheet" href="ESTILOS.CSS">
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <a class="logo" href="INDEX.HTML">
+                🔨
+                <div>
+                    <span>FERRETERIA</span>
+                    <strong>MAX</strong>
+                </div>
+            </a>
+            <nav class="menu">
+                <a href="INDEX.HTML">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="cuenta.html">Mi cuenta</a>
+            </nav>
+            <div class="header-acciones">
+                <a href="carrito.html" class="btn-carrito">
+                    🛒 Carrito
+                    <span id="contadorCarrito">0</span>
+                </a>
+                <a href="cuenta.html" class="btn-login">Iniciar sesión</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-banner">
+        <div class="wrap">
+            <p class="migas"><a href="INDEX.HTML">Inicio</a> / Carrito</p>
+            <h1>Carrito</h1>
+            <p>Productos a la izquierda, resumen de compra a la derecha.</p>
+        </div>
+    </div>
+
+    <main>
+<section id="carrito" class="carrito">
+    <div class="wrap">
+
+    <div class="section-title">
+
+        <span>MI COMPRA</span>
+
+        <h2>
+            🛒 Carrito de compras
+        </h2>
+
+        <p>
+            Revisa los productos que has seleccionado.
+        </p>
+
+    </div>
+
+
+    <div class="carrito-container">
+
+        <div id="productosCarrito" class="productos-carrito">
+
+            <div class="carrito-vacio">
+
+                <div class="carrito-vacio-icono">
+                    🛒
+                </div>
+
+                <h3>
+                    Tu carrito está vacío
+                </h3>
+
+                <p>
+                    Agrega algunos productos para comenzar tu compra.
+                </p>
+
+                <a href="productos.html" class="btn-primary">
+                    Ver productos
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="resumen-carrito">
+
+            <h3>
+                Resumen de compra
+            </h3>
+
+            <div class="resumen-linea">
+
+                <span>
+                    Productos:
+                </span>
+
+                <strong id="cantidadCarrito">
+                    0
+                </strong>
+
+            </div>
+
+            <div class="resumen-linea">
+
+                <span>
+                    Subtotal:
+                </span>
+
+                <strong id="subtotalCarrito">
+                    $0 COP
+                </strong>
+
+            </div>
+
+            <div class="resumen-linea">
+
+                <span>
+                    Envío:
+                </span>
+
+                <strong>
+                    Gratis
+                </strong>
+
+            </div>
+
+            <hr>
+
+            <div class="total-carrito">
+
+                <span>
+                    TOTAL
+                </span>
+
+                <strong id="totalCarrito">
+                    $0 COP
+                </strong>
+
+            </div>
+             <div id="mensajeCompra" class="mensaje-compra"></div>
+            <button
+                type="button"
+                class="btn-form"
+                onclick="finalizarCompra()"
+            > 
+                Finalizar compra
+            </button>
+
+            <button
+                type="button"
+                class="btn-vaciar"
+                onclick="vaciarCarrito()"
+            >
+                Vaciar carrito
+            </button>
+
+        </div>
+
+    </div>
+
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div>
+                <div class="footer-logo">
+                    🔨
+                    <span>FERRETERÍA <strong>MAX</strong></span>
+                </div>
+                <p>Todo lo que necesitas para construir, reparar y mejorar tus proyectos.</p>
+            </div>
+            <div>
+                <h3>Navegación</h3>
+                <a href="INDEX.HTML">Inicio</a>
+                <a href="productos.html">Productos</a>
+                <a href="ofertas.html">Ofertas</a>
+                <a href="nosotros.html">Nosotros</a>
+            </div>
+            <div>
+                <h3>Atención</h3>
+                <a href="contacto.html">Contacto</a>
+                <a href="cuenta.html">Mi cuenta</a>
+                <a href="carrito.html">Carrito</a>
+            </div>
+            <div>
+                <h3>Síguenos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">WhatsApp</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Ferretería Max. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
